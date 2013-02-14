@@ -1,0 +1,4 @@
+{
+	"access_token":"Insert your Instagram Access Token Here",
+	"user_id": "Enter the Instagram User ID of the profile you want to fetch."
+}

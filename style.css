@@ -1,0 +1,99 @@
+body {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-weight: 200;
+	font-size: 14px;
+
+	text-align: center;
+}
+
+p.posted_time {
+	text-align: right;
+	font-weight: bold;
+	font-size: 0.8em;
+	line-height: 1em;
+}
+
+ul#instagram {
+	/*-webkit-column-width: 480px;*/
+	position: relative;
+	margin: 0 auto;
+}
+
+ul#instagram li {
+	position: relative;
+	max-width: 320px;
+	width: 100%;
+	overflow: hidden;
+
+	float: left;
+	margin: 10px;
+	padding: 3px;
+
+	//border: 1px solid #000;
+	-webkit-box-shadow: 1px 1px 6px #000;
+}
+
+ul#instagram li img {
+	width: 100%;
+	height: 100%;
+	max-width: 320px;
+	max-height: 320px;
+}
+
+/* Colors by filter */
+li.filter-Hefe, li.filter-Walden, li.filter-Gotham, li.filter-Brannan, li.filter-Poprocket, li.filter-Nashville, li.filter-X-Pro_II, li.filter-Sutro, li.filter-Hudson {
+	color: #fff;
+	background-color: #000;
+}
+
+li.filter-Earlybird {
+	color: #000;
+	background-image: url('earlybird.png');
+}
+
+li.filter-Toaster {
+	background-color: rgb(241, 241, 241);	
+}
+
+li.filter-Inkwell {
+	background-color: rgb(239, 239, 239);	
+}
+
+li.filter-Sierra {
+	background-color: rgb(251, 234, 221);	
+}
+
+
+/* Clear fix */
+@media screen and (min-width: 660px) {
+	ul#instagram li:nth-of-type(2n + 1) {
+		clear: left;
+	}	
+}
+
+@media screen and (min-width: 1020px) {
+	ul#instagram li:nth-of-type(2n + 1) {
+		clear: none;	
+	}	
+	ul#instagram li:nth-of-type(3n + 1) {
+		clear: left;	
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	ul#instagram li:nth-of-type(3n + 1) {
+		clear: none;	
+	}
+	ul#instagram li:nth-of-type(4n + 1) {
+		clear: left;	
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	ul#instagram li:nth-of-type(4n + 1) {
+		clear: none;	
+	}
+	ul#instagram li:nth-of-type(5n + 1) {
+		clear: left;	
+	}
+}
